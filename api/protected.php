@@ -1,15 +1,9 @@
 <?php
 // protected.php
-session_start();
-header('Content-Type: application/json');
+require_once '../middleware/auth.php';
+checkAuth();
 
-// Check if user is logged in
-if (!isset($_SESSION['user_id'])) {
-    // Not authorized
-    http_response_code(401);
-    echo json_encode(["message" => "Unauthorized"]);
-    exit;
-}
+header('Content-Type: application/json');
 
 // Authorized — return user info
 $response = [
