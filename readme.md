@@ -47,7 +47,7 @@ Um dieses Boilerplate auf dem eigenen Web-Server zu installieren, führe folgend
 
 - beinhaltet alle CSS-Dateien des Frontends.
 
-## 📁 Backend
+## 🤖 Backend
 
 ### api
 
