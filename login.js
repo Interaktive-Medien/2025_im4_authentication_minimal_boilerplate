@@ -6,7 +6,7 @@ document.getElementById("loginForm").addEventListener("submit", async (e) => {
   const password = document.getElementById("password").value.trim();
 
   try {
-    const response = await fetch("login.php", {
+    const response = await fetch("backend/login.php", {
       method: "POST",
       // credentials: 'include', // uncomment if front-end & back-end are on different domains
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
