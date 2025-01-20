@@ -1,4 +1,10 @@
 <?php
+// diese Datei gehört nicht zum Boilerplate und nicht zu IM4 !!
+// diese Datei gehört nicht zum Boilerplate und nicht zu IM4 !!
+// diese Datei gehört nicht zum Boilerplate und nicht zu IM4 !!
+// diese Datei gehört nicht zum Boilerplate und nicht zu IM4 !!
+
+
 // Set the header to return JSON
 header('Content-Type: application/json');
 
