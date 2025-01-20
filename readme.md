@@ -1,5 +1,9 @@
 # 🔑👤 Authentifizierung Minimal (Boilerplate)
 
+![Static Badge](https://img.shields.io/badge/Sprache-PHP-%23f7df1e)
+![Static Badge](https://img.shields.io/badge/Kurs-MMP_IM4-blue)
+![Static Badge](https://img.shields.io/badge/Aktualisiert-20.01.2025-coral)
+
 > 🎨 Dieses Boilerplate kann entweder in einem Code-Along Schritt für Schritt gemeinsam erarbeitet werden oder fixfertig auf einem Webserver installiert werden.
 
 Dieses Repository beinhaltet ein vollständiges, minimales Authenzifizierungs-System basierend auf PHP als Backend und HTML/CSS/JS als Frontend.
