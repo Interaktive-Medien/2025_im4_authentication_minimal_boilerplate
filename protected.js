@@ -2,7 +2,7 @@
 (async function () {
   try {
     // We call protected.php to see if the user is logged in
-    const response = await fetch("backend/protected.php", {
+    const response = await fetch("api/protected.php", {
       // credentials: 'include', // uncomment if front-end & back-end are on different domains
     });
 
@@ -29,5 +29,5 @@
 
 // Logout button logic
 document.getElementById("logoutBtn").addEventListener("click", () => {
-  window.location.href = "logout.php";
+  window.location.href = "api/logout.php";
 });
