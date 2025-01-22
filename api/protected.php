@@ -1,13 +1,18 @@
 <?php
-// protected.php
-require_once '../middleware/auth.php';
-checkAuth();
+// index.php (API that returns JSON about the logged-in user)
+session_start();
 
-header('Content-Type: application/json');
+if (!isset($_SESSION['user_id'])) {
+    // Instead of redirect, return a 401 JSON response
+    http_response_code(401);
+    header('Content-Type: application/json');
+    echo json_encode(["error" => "Unauthorized"]);
+    exit;
+}
 
-// Authorized — return user info
-$response = [
-    "email" => $_SESSION['email'],
-    "message" => "You have access"
-];
-echo json_encode($response);
+// If they are logged in, return user data
+echo json_encode([
+    "status" => "success",
+    "user_id" => $_SESSION['user_id'],
+    "email" => $_SESSION['email']
+]);

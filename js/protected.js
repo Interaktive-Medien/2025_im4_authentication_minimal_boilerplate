@@ -1,31 +1,33 @@
-// protected.js
-(async function () {
+async function checkAuth() {
   try {
-    // We call protected.php to see if the user is logged in
-    const response = await fetch("api/protected.php", {
-      // credentials: 'include', // uncomment if front-end & back-end are on different domains
+    const response = await fetch("/api/protected.php", {
+      credentials: "include",
     });
 
     if (response.status === 401) {
-      // If not authorized, redirect to login
-      window.location.href = "login.html";
-      return;
+      window.location.href = "/login.html";
+      return false;
     }
 
-    // If authorized, protected.php will respond with JSON containing user data
-    const data = await response.json();
+    const result = await response.json();
 
-    const contentDiv = document.getElementById("protectedContent");
-    contentDiv.innerHTML = `
-        <p>You are logged in as: <strong>${data.email}</strong></p>
-        <p>Welcome to the protected area!</p>
-      `;
+    // Display user data in the protected content div
+    const protectedContent = document.getElementById("protectedContent");
+    protectedContent.innerHTML = `
+      <h2>Welcome, ${result.email}!</h2>
+      <p>Your user ID is: ${result.user_id}</p>
+    `;
+
+    return true;
   } catch (error) {
-    console.error("Error fetching protected data:", error);
-    // In case of any error, go to login
-    window.location.href = "login.html";
+    console.error("Auth check failed:", error);
+    window.location.href = "/login.html";
+    return false;
   }
-})();
+}
+
+// Check auth when page loads
+window.addEventListener("load", checkAuth);
 
 // Logout button logic
 document.getElementById("logoutBtn").addEventListener("click", () => {
