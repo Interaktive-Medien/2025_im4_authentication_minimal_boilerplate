@@ -2,7 +2,7 @@
 
 ![Static Badge](https://img.shields.io/badge/Sprache-PHP-%23f7df1e)
 ![Static Badge](https://img.shields.io/badge/Kurs-MMP_IM4-blue)
-![Last Changed](https://img.shields.io/endpoint?url=https://im4.crazy-internet.ch/system/badge.php)
+![Last Changed](https://img.shields.io/endpoint?url=https://badges.crazy-internet.ch/im4_example.php)
 
 > 🎨 Dieses Boilerplate kann entweder in einem Code-Along Schritt für Schritt gemeinsam erarbeitet werden oder fixfertig auf einem Webserver installiert werden.
 
