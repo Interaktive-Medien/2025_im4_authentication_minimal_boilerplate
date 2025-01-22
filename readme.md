@@ -10,6 +10,12 @@ Dieses Repository beinhaltet ein vollständiges, minimales Authenzifizierungs-Sy
 
 Es ermöglicht Benutzern das `Registrieren`, `Anmelden`, `Abmelden` und den Zugriff auf eine `geschützte Seite` nach erfolgreicher Authentifizierung.
 
+# 🏁 Live - Version
+
+Du kannst Homely unter folgendem Link testen:
+
+[https://im4.crazy-internet.ch/](https://im4.crazy-internet.ch/)
+
 ## ⚙️ Installation
 
 Um dieses Boilerplate auf dem eigenen Web-Server zu installieren, führe folgende Schritte aus:
