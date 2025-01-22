@@ -64,11 +64,6 @@ Um dieses Boilerplate auf dem eigenen Web-Server zu installieren, führe folgend
 - Beinhaltet alle API-Endpunkte des Backends.
 - Diese Dateien werden von `JavaScript` aufgerufen und geben eine Antwort an `JavaScript` zurück.
 
-### middleware
-
-- Beinhaltet die Datei `auth.php`, die sicherstellt, dass Benutzer authentifiziert sind, bevor eine geschützte Seite aufgerufen werden kann.
-- Diese Dateien werden von `PHP` aufgerufen und geben eine Antwort an `PHP` zurück.
-
 ### system
 
 - Beinhaltet die Konfigurationsdatei für die Datenbankverbindung.
