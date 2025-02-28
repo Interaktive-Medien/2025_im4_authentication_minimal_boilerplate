@@ -3,8 +3,6 @@ document.getElementById("logoutBtn").addEventListener("click", async (e) => {
   // Prevent the default button behavior
   e.preventDefault();
 
-  console.log("Logout button clicked");
-
   try {
     const response = await fetch("api/logout.php", {
       method: "GET",
