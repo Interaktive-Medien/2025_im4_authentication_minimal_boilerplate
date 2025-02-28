@@ -28,8 +28,3 @@ async function checkAuth() {
 
 // Check auth when page loads
 window.addEventListener("load", checkAuth);
-
-// Logout button logic
-document.getElementById("logoutBtn").addEventListener("click", () => {
-  window.location.href = "api/logout.php";
-});
