@@ -10,6 +10,8 @@ Dieses Repository beinhaltet ein vollständiges, minimales Authenzifizierungs-Sy
 
 Es ermöglicht Benutzern das `Registrieren`, `Anmelden`, `Abmelden` und den Zugriff auf eine `geschützte Seite` nach erfolgreicher Authentifizierung.
 
+Eine einfache Erklärung des Login-Ablaufs mit Sessions und Cookies findest du in [`sessions.md`](sessions.md).
+
 # 🏁 Live - Version
 
 Du kannst Homely unter folgendem Link testen:
