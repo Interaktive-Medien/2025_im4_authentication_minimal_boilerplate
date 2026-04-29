@@ -8,8 +8,10 @@ header('Content-Type: application/json');
 require_once '../system/config.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $email    = trim($_POST['email'] ?? '');
-    $password = trim($_POST['password'] ?? '');
+    $data = json_decode(file_get_contents("php://input"), true);
+
+    $email    = trim($data['email'] ?? '');
+    $password = trim($data['password'] ?? '');
 
     if (!$email || !$password) {
         echo json_encode(["status" => "error", "message" => "Email and password are required"]);
